@@ -1,0 +1,38 @@
+.carousel
+    padding: 10.8rem 0
+    font-size: 100px
+    &__wrapper
+        position: relative
+        max-width: 75rem
+        margin: 0 auto
+    img
+        display: block
+        margin: 0 auto
+        width: 100%
+    .prev, .next
+        width: 5rem
+        height: 3.1rem
+        position: absolute
+        left: -6.6rem
+        top: 50%
+        transform: translateY(-50%)
+        border: 0
+        background-color: rgba(0, 0, 0, 0)
+    .next
+        left: auto
+        right: -6.6rem
+    .tns-nav
+        display: none
+        position: absolute
+        top: -5rem
+        left: 50%
+        transform: translateX(-50%)
+        button
+            width: 3rem
+            height: 3rem
+            border: 0
+            margin-left: 1rem
+            background-color: #ff3f3f
+            border-radius: 5rem
+        .tns-nav-active
+            background-color: #ff0000
