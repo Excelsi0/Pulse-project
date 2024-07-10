@@ -1,0 +1,94 @@
+.card-wraper
+    width: 30rem
+    min-height: 44rem
+    perspective: 50rem
+    // &:hover .card
+    //     transform: rotateY(-180deg)
+    .card
+        width: 30rem
+        min-height: 44rem
+
+        box-shadow: 0 0 1rem #a0a0a0
+        transition: transform .2s linear
+        transform-style: preserve-3d
+        border-radius: 2rem
+        cursor: pointer
+        &_active
+            transform: rotateY(-180deg)
+
+        &_front, &_back
+            padding: 2rem
+            width: 100%
+            min-height: 100%
+            position: absolute
+            backface-visibility: hidden
+
+        &_back
+            transform: rotateY(-180deg)
+
+        &__img
+            display: block
+            margin: 0 auto
+            max-width: 100%
+            height: 20rem
+        &__subtitle
+            margin-top: 1.5rem
+            font-weight: 700
+            font-size: 1.6rem
+            text-align: center
+            color: #0d0d0d
+        &__descr
+            margin-top: 1.5rem
+            font-weight: 300
+            font-size: 1.4rem
+            text-align: center
+            color: #0d0d0d
+        &__link, &__link_back
+            display: block
+            margin: 1rem auto 0
+            font-weight: 500
+            font-size: 1.4rem
+            line-height: 100%
+            text-decoration: underline
+            text-decoration-skip-ink: none
+            text-transform: uppercase
+            text-align: center
+            cursor: pointer
+            color: $main-color
+
+        hr
+            margin: 1.7rem 0
+            border-bottom: 0
+            background-color: #e8e8e8
+        &__footer
+            display: flex
+            justify-content: space-between
+            align-items: center
+        &__prices
+            display: inline
+            margin-top: 1.7rem
+        &__old-price
+            font-weight: 300
+            font-size: 1.4rem
+            line-height: 100%
+            text-decoration: line-through
+            color: #555
+        &__price
+            font-weight: 700
+            font-size: 2rem
+            line-height: 100%
+            color: #050505
+        &__list
+            ::marker
+                color: $main-color
+            li
+                margin-bottom: 1rem
+                font-weight: 300
+                font-size: 1.4rem
+                line-height: 150%
+                color: #555
+        &__footer_back
+            position: absolute
+            bottom: 2.1rem
+            .button_mini
+                margin-left: 3.4rem

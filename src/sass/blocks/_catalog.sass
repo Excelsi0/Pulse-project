@@ -1,0 +1,46 @@
+.catalog
+    padding-bottom: 4rem
+    &__tabs
+        margin-top: 4.6rem
+        display: flex
+        justify-content: center
+        align-items: center
+        gap: 1rem
+        padding: 0
+    &__tab
+        display: flex
+        justify-content: center
+        align-items: center
+
+        width: 22.3rem
+        height: 5.2rem
+        border: 1px solid #000
+        list-style: none
+        transform: skewX(-35deg)
+        border-color: #d0d0d0
+        cursor: pointer
+        transition: box-shadow .3s linear, border .3s linear
+        &:hover
+            box-shadow: 0 0 2rem #bababa
+            border: 0
+        div
+            transform: skewX(35deg)
+            font-weight: 400
+            font-size: 1.8rem
+            line-height: 100%
+            text-transform: uppercase
+            text-align: center
+            color: #6b6b6b
+        &_active
+            background-color: $main-color
+            div
+                color: #fff
+    &__content
+        margin-top: 5.7rem
+        display: none
+        justify-content: center
+        align-items: center
+        gap: 1.8rem
+        flex-wrap: wrap
+        &_active
+            display: flex
