@@ -37,6 +37,14 @@
         &__subtitle
             font-size: 1.6rem
 
+    .reviews
+        &__wrap
+            flex-wrap: wrap
+        &__img
+            margin: 0 auto
+        &__name, &__qty_marathon, &__text
+            text-align: left
+
 @media (max-width: 575px)
     .header
         &__official
@@ -69,3 +77,59 @@
             width: 9rem
             div
                 font-size: 0.9rem
+    .footer
+        &__contact
+            width: 90%
+        &__address, &__phone
+            font-size: 1.6rem
+        &__phone
+            margin-top: 2.6em
+        &__social_network
+            gap: 1.7rem
+    .overlay
+        .modal
+            padding: 2.8rem 1rem 4rem 1rem
+            min-width: 30rem
+            &__close
+                display: flex
+                justify-content: center
+                align-items: center
+                top: .3rem
+                right: .5rem
+                border: 0.1rem solid $main-color
+
+@media (max-width: 340px) 
+    .header
+        &__logo
+            img
+                width: 94%
+    .promo
+        &__icons
+            width: 27rem
+        .button_main 
+            width: 25rem
+    .advantages
+        .title
+            font-size: 2rem
+    .carousel
+        padding: 7.8rem 0 6rem
+    .consultation
+        .title
+            font-size: 2rem
+    .catalog
+        .title
+            font-size: 2rem
+        &__tabs
+        &__tab
+            transform: skewX(0deg)
+            div
+                transform: skewX(0deg)
+    .card-wraper
+        .card
+            &__prices
+                margin-top: 0
+            &__price
+                font-size: 1.4rem
+    .overlay
+        .modal
+            min-width: 25rem

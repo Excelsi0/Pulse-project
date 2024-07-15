@@ -5,7 +5,7 @@
     // &:hover .card
     //     transform: rotateY(-180deg)
     .card
-        width: 30rem
+        width: 100%
         min-height: 44rem
 
         box-shadow: 0 0 1rem #a0a0a0
@@ -88,7 +88,14 @@
                 line-height: 150%
                 color: #555
         &__footer_back
+            width: 100%
             position: absolute
             bottom: 2.1rem
-            .button_mini
-                margin-left: 3.4rem
+            left: 50%
+            transform: translateX(-50%)
+            .card__footer
+                justify-content: flex-end
+                margin-right: 2rem
+            .hr__back
+                width: 100%
+                
